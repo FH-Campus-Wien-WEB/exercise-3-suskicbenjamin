@@ -5,6 +5,14 @@ h1 {
   margin: 8px 0px;
 }
 
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
 /* Constrain the page to the viewport */
 html, body {
   height: 100vh;
@@ -58,6 +66,14 @@ article {
   padding: 16px;
   width: 384px;
   margin: 8px;
+}
+
+article:hover {
+  transform: scale(1.01);
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {
