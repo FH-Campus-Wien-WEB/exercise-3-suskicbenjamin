@@ -31,6 +31,13 @@ function appendMovie(movie, element) {
       "Released on " +
       new Date(movie.released).toLocaleDateString("en-US")))
     .append(
+      new ParagraphBuilder().items(
+        "Metascore: " + movie.metascore,
+        "\u2022",
+        "imdbRating: " + movie.imdbRating
+      )
+    )  
+    .append(
       new ParagraphBuilder()
       .childClass("genre")
       .class("genres")
